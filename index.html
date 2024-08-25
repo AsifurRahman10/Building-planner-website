@@ -28,9 +28,17 @@
                         Color_4: '#E9E9E9',
                         Color_5: '#d3f6ae',
                         Color_6: '#f4f4f4',
+                        card_1: '#e7c1d3',
+                        card_2: '#EFDA6E',
+                        card_3: '#A4DAC3',
+                        card_4: '#77AAEA',
+                        color_7: 'rgba(171, 239, 95, 0.20)',
                     },
                     fontFamily: {
                         manrope: "Manrope",
+                    },
+                    backgroundImage: {
+                        bg_image: "url('./assets/bg.jpg')"
                     }
                 }
             }
@@ -179,6 +187,91 @@
             </div>
             </div>
         </section>
+
+        <!-- Our Works Process section -->
+         <section class="bg-Color_6"> 
+            <div class="w-11/12 mx-auto py-20">
+                <div class="flex flex-col justify-center items-center text-center gap-6">
+                    <div class="flex items-center w-40 gap-3 bg-white rounded-3xl justify-center mx-auto lg:mx-0 p-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <h3 class="font-bold text-color-3">How we works</h3>
+                    </div>
+                    <div class="space-y-6 text-center lg:text-left flex flex-col justify-center items-center">
+                        <h2 class="text-3xl lg:text-5xl font-extrabold">Our Works Process</h2>
+                        <p class="text-color-3 font-medium lg:w-2/3 mx-auto text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                </div>
+
+                <!-- card container -->
+                 <div class="flex mt-8 gap-10">
+                    <div class="bg-card_1 p-6 rounded-2xl space-y-3">
+                        <img src="./assets/concept.png" alt="">
+                        <h2 class="text-xl font-extrabold">Concept</h2>
+                        <p class="font-medium text-color_3">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                    <div class="bg-card_2 p-6 rounded-2xl space-y-3">
+                        <img src="./assets/flow-chart.png" alt="">
+                        <h2 class="text-xl font-extrabold">Design Process</h2>
+                        <p class="font-medium text-color_3">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                    <div class="bg-card_3 p-6 rounded-2xl space-y-3">
+                        <img src="./assets/vision.png" alt="">
+                        <h2 class="text-xl font-extrabold">Supervision</h2>
+                        <p class="font-medium text-color_3">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                    <div class="bg-card_4 p-6 rounded-2xl space-y-3">
+                        <img src="./assets/budget-planning.png" alt="">
+                        <h2 class="text-xl font-extrabold">Budget Planning</h2>
+                        <p class="font-medium text-color_3">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                 </div>
+            </div>
+         </section>
+
+         <!-- contact us section -->
+          <section class="mt-2">
+            <div class="bg-bg_image bg-cover bg-no-repeat py-8 lg:py-20">
+                <div class="w-11/12 mx-auto ">
+                    <div class="flex flex-col justify-center items-center text-center gap-6">
+                        <div class="flex items-center w-40 gap-3 bg-color_7 rounded-3xl justify-center mx-auto lg:mx-0 p-2">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <h3 class="font-bold text-color-3">Let’s Connect</h3>
+                        </div>
+                        <div class="space-y-6 text-center lg:text-left flex flex-col justify-center items-center">
+                            <h2 class="text-3xl lg:text-5xl font-extrabold">Let’s Discuss Next Project</h2>
+                            <p class="text-color-3 font-medium lg:w-2/3 mx-auto text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-11/12 lg:w-3/4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+                    <div>
+                        <input type="text" class="bg-white py-3 px-5 rounded-3xl w-full" placeholder="First Name*">
+                    </div>
+                    <div>
+                        <input type="text" class="bg-white py-3 px-5 rounded-3xl w-full" placeholder="Last Name*">
+                    </div>
+                    <div>
+                        <input type="text" class="bg-white py-3 px-5 rounded-3xl w-full" placeholder="Phone Number*">
+                    </div>
+                    <div>
+                        <input type="text" class="bg-white py-2 px-5 rounded-3xl w-full" placeholder="Email Number*">
+                    </div>
+                    <div class="lg:col-span-2">
+                        <textarea name="" id="" rows="10" class="bg-white py-2 px-5 rounded-3xl w-full" placeholder="Write your message here"></textarea>
+                        <button class="col-span-2 w-full mt-8">
+                            <div class="flex justify-center gap-2 items-center bg-color_1  py-2 px-4 rounded-[32px]">
+                                <span class="text-xl font-extrabold">Send Mail</span>
+                                <div class="w-8 h-8 bg-black rounded-full flex justify-center items-center">
+                                    <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+          </section>
     </main>
 
     <footer>
