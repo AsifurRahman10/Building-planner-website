@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +17,98 @@
     <!-- Tailwind config script -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        Nav_bg: '#f6f6f6',
+                        color_1: '#ABEF5F',
+                        color_2: '#737373',
+                        Color_3: '#494949',
+                        Color_4: '#E9E9E9',
+                    },
+                    fontFamily: {
+                        manrope: "Manrope",
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
-<body>
-    <h1>Hello World</h1>
+
+<body class="font-manrope">
+    <header class="bg-nav_bg">
+        <!-- navbar section -->
+        <nav>
+            <div class="bg-Nav_bg">
+                <div class="navbar py-6 w-11/12 mx-auto">
+                    <div class="navbar-start">
+                        <a class="flex justify-center items-center gap-2">
+                            <div class="w-9 h-9 bg-color_1 rounded-full flex justify-center items-center">
+                                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                            </div>
+                            <span class="text-3xl font-extrabold">Rinterio</span>
+                        </a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-color_2 gap-10">
+                            <li class="hover:text-color_3 hover:font-extrabold">Home</li>
+                            <li class="hover:text-color_3 hover:font-extrabold">Service</li>
+                            <li class="hover:text-color_3 hover:font-extrabold">Portfolio</li>
+                            <li class="hover:text-color_3 hover:font-extrabold">Blogs</li>
+                            <li class="hover:text-color_3 hover:font-extrabold">Contact Us</li>
+                            <li class="hover:text-color_3 hover:font-extrabold"></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="lg:flex lg:gap-4 lg:justify-center lg:items-center hidden">
+                            <div
+                                class="w-11 h-11 rounded-full bg-white flex justify-center items-center border border-color_4">
+                                <i class="fa-solid fa-magnifying-glass text-lg text-color_2"></i>
+                            </div>
+                            <div
+                                class="w-11 h-11 rounded-full bg-white flex justify-center items-center border border-color_4">
+                                <i class="fa-solid fa-cart-shopping text-lg text-color_2"></i>
+                            </div>
+                            <div class="flex justify-center gap-2 items-center bg-color_1 py-3 px-4 rounded-[32px]">
+                                <span class="text-xl font-extrabold">Book Consult</span>
+                                <div class="w-9 h-9 bg-black rounded-full flex justify-center items-center">
+                                    <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="lg:hidden">
+                                <div class="w-12 h-12 bg-white rounded-full flex justify-center items-center border border-color_4">
+                                    <i class="fa-solid fa-bars text-2xl font-semibold text-color_2"></i>
+                                </div>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 right-0 w-32 p-2 shadow">
+                                <li class="hover:text-color_3 hover:font-extrabold">Home</li>
+                                <li class="hover:text-color_3 hover:font-extrabold">Service</li>
+                                <li class="hover:text-color_3 hover:font-extrabold">Portfolio</li>
+                                <li class="hover:text-color_3 hover:font-extrabold">Blogs</li>
+                                <li class="hover:text-color_3 hover:font-extrabold">Contact Us</li>
+                                <li class="hover:text-color_3 hover:font-extrabold"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
